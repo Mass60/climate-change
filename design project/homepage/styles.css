@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap');
+body { 
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-size: 0;
+}
+*::-webkit-scrollbar{
+  display: none;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Signika Negative", sans-serif;
+  scrollbar-width: none;
+}
+/*main header*/
+.main-title{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  position: absolute;
+  z-index: 3;
+  color: #4a86e8;
+  top: -17vh;
+  font-size: 23vh;
+}
+.subtitle{
+  margin: auto;
+  background-color: black;
+  color: #4a86e8;
+  padding: 10px;
+  border-bottom:  10px;
+  border-color: #4a86e8;
+  font-size: 50px;
+}
+hr{
+  background-color: #4a86e8;
+  height: 10px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+
+.image-carousell{
+  box-sizing: border-box;
+  width: 100%;
+  height: 90%;
+}
+.swiper{
+  width: 100%;
+  height: 100vh;
+  transition: ease 3s;
+}
+.swiper-slide img{
+  width: 100%;
+
+}
+/*main page and content*/
+
+h1{
+  text-align: center;
+}
+.boxes{
+  margin: auto;
+  display: inline-block;
+  height: 50vh;
+  width: 50vw;
+  text-align: center;
+  transition: 1s ease-in-out;
+  vertical-align: middle;
+  font-size: 10vh;
+  overflow: hidden;
+}
+a{
+  position: absolute;
+  height: 50vh;
+  width: 50vw;
+  z-index: 5;
+}
+.sub{
+  position: absolute;
+  margin: auto;
+  z-index: 4;
+  color: #4a86e8;
+  width: 50vw;
+  height: 50vh;
+  vertical-align: middle;
+
+}
+/* Brightness-zoom Container */
+.img-hover-zoom img {
+  transition: transform 1s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(0%);
+}
+img{
+  width: 100%;
+}
+/* The Transformation */
+.img-hover-zoom:hover img {
+  filter: brightness(50%);
+  transform: scale(1.1);
+}
